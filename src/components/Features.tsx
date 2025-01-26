@@ -138,7 +138,7 @@ const FeatureCarousel = () => {
   };
 
   return (
-    <div id="#services" className="   py-20  ">
+    <div id="#featured" className="   py-20  ">
       <div className="relative h-auto space-y-0  ">
         <div className="md:text-left text-center px-6   md:text-5xl text-3xl md:pl-32 font-bold uppercase tracking-wider pb-2 ">
         Featured Projects

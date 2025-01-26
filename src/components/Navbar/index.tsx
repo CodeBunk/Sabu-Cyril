@@ -15,7 +15,8 @@ const Navbar = () => {
     { name: "Services", route: "/#services" },
     { name: "About Us", route: "/#about" },
     // { name: "Why Us", route: "/#whyus" },
-    { name: "Clients", route: "/#clients" },
+    { name: "Featured", route: "/#featured" },
+    // { name: "Featured", route: "/#clients" },
     { name: "Testimonials", route: "/#testimonials" },
   ];
 
