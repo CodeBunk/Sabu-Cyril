@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "helvetica";
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/HelveticaNeueBlack.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/HelveticaNeueMedium.otf") format("truetype");
+  font-weight: 500;
+  font-style: medium;
+}
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/helvetica-semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: semibold;
+}
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/helvetica-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/helvetica-extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: extrabold;
+}
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/helvetica-black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: black;
+}
+@font-face {
+  font-family: "72";
+  src: url("/fonts/72/72-Light.ttf") format("truetype");
+  font-weight: 500;
+  font-style: light;
+}
+
+@keyframes progressBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Hide scrollbars globally */
+* {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and newer Edge */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 60s linear infinite;
+}
+@keyframes marquee-clients {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-clients {
+  display: inline-flex;
+  animation: marquee-clients calc(4s * var(--child-count)) linear infinite;
+}
+
+.animate-marquee:hover,
+.animate-marquee-clients:hover {
+  animation-play-state: paused;
+}
