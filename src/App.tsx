@@ -12,12 +12,12 @@ import Home from "./Pages/Home";
 import Layout from "./components/Layout/Layout";
 import { AR, CINE, MODEL, MR, MVP, VR } from "./Constants";
 
-import MRpage from "./Pages/MRpage";
-import ARpage from "./Pages/ARpage";
-import Modelling from "./Pages/3dModel";
-import CinePreviz from "./Pages/CinePreviz";
-import MVPpage from "./Pages/MVPPage";
-import VRpage from "./Pages/VRpage";
+// import MRpage from "./Pages/MRpage";
+// import ARpage from "./Pages/ARpage";
+// import Modelling from "./Pages/3dModel";
+// import CinePreviz from "./Pages/CinePreviz";
+// import MVPpage from "./Pages/MVPPage";
+// import VRpage from "./Pages/VRpage";
 const ScrollToHashElement = () => {
   const location = useLocation();
 
@@ -44,12 +44,12 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
-            <Route path={VR} element={<VRpage />} />
+            {/* <Route path={VR} element={<VRpage />} />
             <Route path={MR} element={<MRpage />} />
             <Route path={AR} element={<ARpage />} />
             <Route path={MODEL} element={<Modelling />} />
             <Route path={CINE} element={<CinePreviz />} />
-            <Route path={MVP} element={<MVPpage />} />
+            <Route path={MVP} element={<MVPpage />} /> */}
           </Route>
         </Routes>
       </Router>
