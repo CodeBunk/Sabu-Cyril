@@ -144,55 +144,7 @@ const FeatureCarousel = () => {
         Featured Projects
         </div>
         <div className="flex md:flex-row flex-col md:h-[60vh] h-full items-center justify-between md:gap-8">
-          {/* Cards Container */}
-          <div className="relative md:w-1/2 w-full   h-full  flex items-center justify-center overflow-visible  max-md:px-20 ">
-            <div className="relative w-3/4 pt-5 min-h-[300px] h-full  flex items-center justify-center gap-0  ">
-              {services.map((service, index) => (
-                <div
-                  key={service.id}
-                  className="absolute h-5/6 aspect-[5/6] transition-all duration-500 ease-in-out"
-                  style={getSlideStyle(index)}
-                >
-                  <a href={service?.route} className=" cursor-pointer">
-                    <div className="w-full h-full rounded-3xl overflow-hidden border-white border-opacity-50 border ">
-                      <div
-                        className={`absolute inset-0 bg-gradient-to-br  opacity-60`}
-                      />
-
-                      <img
-                        src={service.image}
-                        alt={service.title}
-                        className="w-full h-full object-cover    "
-                      />
-
-                      <div className=" uppercase rounded-b-3xl  text-xl  flex items-end pb-3 justify-center font-menseal font-bold  absolute bottom-0 h-20 text-balance  left-0 -0 w-full text-center bg-gradient-to-t from-black  to-transparent ">
-                        {" "}
-                        <h2 className="md:text-2xl text-lg font-bold text-white max-sm:leading-[106%] w-3/4 break-words">
-                          {service.title}
-                        </h2>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              ))}
-            </div>
-            <div className=" md:hidden absolute top-0 left-0 w-full h-full  flex items-center  justify-between">
-              <button
-                onClick={prevSlide}
-                className=" p-2 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition-colors duration-300"
-                disabled={isAnimating}
-              >
-                <ChevronLeft size={24} />
-              </button>
-              <button
-                onClick={nextSlide}
-                className="p-2 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition-colors duration-300"
-                disabled={isAnimating}
-              >
-                <ChevronRight size={24} />
-              </button>
-            </div>
-          </div>
+          
 
           {/* Content Section */}
           <div className="md:w-1/2 w-full h-full  max-md:px-10 pb-10  flex items-center justify-center  ">
@@ -227,10 +179,62 @@ const FeatureCarousel = () => {
               </div>
             </div>
           </div>
+          {/* Cards Container */}
+          <div className="relative md:w-1/2 w-full   h-full  flex items-center justify-center overflow-visible  max-md:px-20 ">
+            <div className="relative w-3/4 pt-5 min-h-[300px] h-full  flex items-center justify-center gap-0  ">
+              {services.map((service, index) => (
+                <div
+                  key={service.id}
+                  className="absolute h-5/6 aspect-[5/6] transition-all duration-500 ease-in-out"
+                  style={getSlideStyle(index)}
+                >
+                  <a href={service?.route} className=" cursor-pointer">
+                    <div className="w-full h-full rounded-3xl overflow-hidden border-white border-opacity-50 border ">
+                      <div
+                        className={`absolute inset-0 bg-gradient-to-br  opacity-60`}
+                      />
+
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-full object-cover    "
+                      />
+
+                      <div className=" uppercase rounded-b-3xl  text-xl  flex items-end pb-3 justify-center font-menseal font-bold  absolute bottom-0 h-20 text-balance  left-0 -0 w-full text-center bg-gradient-to-t from-black  to-transparent ">
+                        {" "}
+                        <h2 className="md:text-2xl text-lg font-bold text-white max-sm:leading-[106%] w-3/4 break-words">
+                          {service.title}
+                        </h2>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              ))}
+            </div>
+            <div className=" md:hidden absolute top-0 right-0 w-full h-full  flex items-center  justify-between">
+              <button
+                onClick={prevSlide}
+                className=" p-2 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition-colors duration-300"
+                disabled={isAnimating}
+              >
+                <ChevronLeft size={24} />
+              </button>
+              <button
+                onClick={nextSlide}
+                className="p-2 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition-colors duration-300"
+                disabled={isAnimating}
+              >
+                <ChevronRight size={24} />
+              </button>
+            </div>
+          </div>
         </div>
 
         {/* Navigation */}
-        <div className=" md:flex items-center justify-center gap-10 md:w-1/2 mt-10 hidden">
+        <div className=" md:flex md:flex-end items-center justify-end gap-10 md:w-full mt-10 hidden bg">
+        <div className=" md:flex md:flex-end items-center justify-center gap-10 md:w-1/2">
+          {/* <div className="">  */}
+
           <button
             onClick={prevSlide}
             className="p-2 rounded-full bg-primary text-white hover:bg-gray-700 transition-colors duration-300"
@@ -258,6 +262,8 @@ const FeatureCarousel = () => {
           >
             <ChevronRight size={24} />
           </button>
+          </div>
+
         </div>
       </div>
     </div>

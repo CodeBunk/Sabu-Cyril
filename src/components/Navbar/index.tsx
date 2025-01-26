@@ -39,10 +39,11 @@ const Navbar = () => {
 
   console.log(window.location, "A window.location");
   return (
-    <div className="z-[1000] fixed top-0 w-full px-4 sm:px-6 lg:px-8 py-4">
-      <div className="max-w-7xl mx-auto">
-        <div className="bg-gradient-to-b from-[#858484] to-transparent p-[0.5px] rounded-2xl via-slate-500">
-          <div className="flex justify-between items-center font-menseal p-4 tracking-wide text-xl rounded-2xl font-regular bg-black">
+    <div className="z-[1000] fixed top-0 w-full ">
+      <div className="max-w-7xl mx-auto pt-2 ">
+        <div className="bg-primary -[#E50914] p-[0.5px] rounded-2xl via-slate-500">
+          {/* <div className="flex justify-between items-center font-menseal p-4 tracking-wide text-xl rounded-2xl font-regular bg-black"> */}
+          <div className="flex justify-between items-center font-menseal p-4 tracking-wide text-xl w-full rounded-2xl font-regular bg-black">
             <img
               onClick={() => Location("/#home")}
               loading="eager"
