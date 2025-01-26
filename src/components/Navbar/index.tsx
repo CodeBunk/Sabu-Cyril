@@ -57,16 +57,20 @@ const Navbar = () => {
               {NavItems.map((item) => (
                 <a
                   onClick={() => Location(item?.route)}
-                  className="group cursor-pointer hover:-translate-y-0.5 delay-50 transition-all duration-200"
+                  className={`${
+                    item?.route === "/" + window.location.hash
+                      ? " text-primary   text-opacity-90 "
+                      : ""
+                  }"group cursor-pointer hover:-translate-y-0.5 delay-50 transition-all duration-200"`}
                 >
                   {item.name}
-                  <div
+                  {/* <div
                     className={`  ${
                       item?.route === "/" + window.location.hash
                         ? " bg-gradient-to-r from-transparent via-white to-transparent "
                         : ""
                     } "  h-0.5 transition-all   group-hover:delay-300  group-hover:transition-all  group-hover:duration-300  group-hover:bg-gradient-to-r from-transparent via-white to-transparent"`}
-                  ></div>
+                  ></div> */}
                 </a>
               ))}
             </div>
