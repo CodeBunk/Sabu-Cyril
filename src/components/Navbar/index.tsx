@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 import { Menu, X } from "lucide-react";
 
-import logo from "../../assets/Logo.png";
+import logo from "../../assets/image.png";
 import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const Location = useNavigate();
@@ -16,8 +16,8 @@ const Navbar = () => {
     { name: "About Us", route: "/#about" },
     // { name: "Why Us", route: "/#whyus" },
     { name: "Featured", route: "/#featured" },
-    // { name: "Featured", route: "/#clients" },
-    { name: "Testimonials", route: "/#testimonials" },
+    { name: "Gallery", route: "/#gallery" },
+    // { name: "Testimonials", route: "/#testimonials" },
   ];
 
   useEffect(() => {
@@ -41,10 +41,10 @@ const Navbar = () => {
   console.log(window.location, "A window.location");
   return (
     <div className="z-[1000] fixed top-0 w-full ">
-      <div className="max-w-7xl mx-auto pt-2 ">
-        <div className="bg-primary -[#E50914] p-[0.5px] rounded-2xl via-slate-500">
+      <div className="  ">
+        <div className=" -[#E50914] bg-black border-primary border-b w-full via-slate-500 ">
           {/* <div className="flex justify-between items-center font-menseal p-4 tracking-wide text-xl rounded-2xl font-regular bg-black"> */}
-          <div className="flex justify-between items-center font-menseal p-4 tracking-wide text-xl w-full rounded-2xl font-regular bg-black">
+          <div className="flex  justify-between items-center max-w-7xl   mx-auto font-menseal p-4 tracking-wide text-xl w-full rounded-2xl font-regular bg-black">
             <img
               onClick={() => Location("/#home")}
               loading="eager"
@@ -57,11 +57,10 @@ const Navbar = () => {
               {NavItems.map((item) => (
                 <a
                   onClick={() => Location(item?.route)}
-                  className={`${
-                    item?.route === "/" + window.location.hash
-                      ? " text-primary   text-opacity-90 "
-                      : ""
-                  }"group cursor-pointer hover:-translate-y-0.5 delay-50 transition-all duration-200"`}
+                  className={`${item?.route === "/" + window.location.hash
+                    ? " text-primary   text-opacity-90 "
+                    : ""
+                    }"group cursor-pointer hover:-translate-y-0.5 delay-50 transition-all duration-200"`}
                 >
                   {item.name}
                   {/* <div
@@ -77,7 +76,7 @@ const Navbar = () => {
             <div className="hidden md:block">
               <button
                 onClick={() => Location("/#contact")}
-                className=" bg-gradient-to-r  border-primary border px-3 py-2 rounded-xl  hover:-translate-y-0.5 transition-all duration-400  hover:scale-105 from-primary to-secondary"
+                className=" bg-gradient-to-r  border-primary border px-3 py-2 rounded-xl  hover:-translate-y-0.5 transition-all duration-400  hover:scale-105 bg-primary to-secondary"
               >
                 Contact us
               </button>
@@ -98,15 +97,13 @@ const Navbar = () => {
       </div>
       {/* Mobile menu */}
       <div
-        className={`fixed inset-0 z-50 bg-black bg-opacity-50 transition-opacity duration-300 ${
-          isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-        }`}
+        className={`fixed inset-0 z-50 bg-black bg-opacity-50 transition-opacity duration-300 ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+          }`}
         onClick={() => setIsOpen(false)}
       >
         <div
-          className={`fixed right-0 top-0 bottom-0 w-64 bg-black p-6 transition-transform duration-300 ease-in-out ${
-            isOpen ? "translate-x-0" : "translate-x-full"
-          }`}
+          className={`fixed right-0 top-0 bottom-0 w-64 bg-black p-6 transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
+            }`}
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex flex-col gap-6">

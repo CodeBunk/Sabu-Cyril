@@ -1,75 +1,68 @@
 import React, { useState, useEffect } from "react";
-import VRIMAGE from "@/assets/images/services/Vr.png";
-import ARIMAGE from "@/assets/images/services/AR.png";
-import MRIMAGE from "@/assets/images/services/MR.png";
-import Modeling from "@/assets/images/services/Loop.gif";
-import MVPIMAGE from "@/assets/images/services/MVP.png";
-import CINEMA from "@/assets/images/services/Cinemapng.png";
+import Custom from "@/assets/images/services/Custom-property.png";
+import Miniatures from "@/assets/images/services/Miniatures.png";
+import SpecialProp from "@/assets/images/services/special-Prop.png";
+import Prosthetics from "@/assets/images/services/prosthetics.png";
+import animaetronics from "@/assets/images/services/animaetronics.jpg";
+import SetDesign from "@/assets/images/services/set.png";
+
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { AR, CINE, MODEL, MR, VR, MVP } from "@/Constants";
 import { useNavigate } from "react-router-dom";
-
 const services = [
   {
     id: 1,
-    image: Modeling,
-    title: "3d modelling & texturing",
+    image: Prosthetics,
+    title: "Prosthetics",
     description:
-      "Transform your ideas into reality with TRINITY-XR's 3D modeling and texturing services! We create detailed 3D models and game-ready assets for product design, architectural visualization, and virtual reality. Our expert team delivers stunning visuals with lifelike materials, ideal for gaming, film, and marketing projects. ",
-
-    cta: "Discover how our 3D services can elevate your work today!",
-    route: MODEL,
+      "Our expert team creates highly realistic prosthetics that bring characters to life. From subtle aging effects to complete character transformations, we craft custom prosthetics that enhance storytelling while ensuring comfort and natural movement for performers.",
+    cta: "Discover how our prosthetics can transform your characters.",
+    // route: MODEL,
   },
   {
     id: 2,
-    title: "VR SERVICES",
+    title: "Special Properties",
     description:
-      "Trinity XR provides tailored Virtual Reality (VR) solutions for healthcare, education, manufacturing, real estate, and gaming. Our immersive applications enhance training, engagement, and visualization.",
-    cta: "Discover how our customized VR services can transform your business.",
-    image: VRIMAGE,
-    route: VR,
+      "We design and fabricate unique, story-driven props that add authenticity to your production. From hero weapons and magical artifacts to period-accurate tools, each piece is meticulously crafted to support your narrative and withstand the demands of filming.",
+    cta: "Explore our custom prop creation services.",
+    image: SpecialProp,
+    // route: VR,
   },
   {
     id: 3,
-    title: "AR SOLUTIONS",
+    title: "Set Design",
     description:
-      "Transform your business with TRINITY-XR's innovative Augmented Reality (AR) services!",
-
-    cta: "We create immersive experiences for product visualization, training simulations, and interactive marketing. Our solutions help retailers visualize products in their environment and assist manufacturers with real-time guidance. Discover how AR can elevate your business today!",
-    image: ARIMAGE,
-    route: AR,
+      "Transform your vision into reality with our comprehensive set design and construction services. We create immersive environments ranging from historical period recreations to futuristic worlds, with meticulous attention to detail and authenticity.",
+    cta: "Let us bring your cinematic worlds to life.",
+    image: SetDesign,
+    // route: AR,
   },
   {
     id: 4,
-    title: "MR services",
+    title: "Miniatures",
     description:
-      "Elevate your business with TRINITY-XR's innovative Mixed Reality (MR) services! We create immersive experiences that blend the physical and digital worlds for applications in training, collaboration, and product design.",
-
-    cta: "Our solutions enable interactive 3D modeling, virtual collaboration for remote teams, and adaptive training simulations. Discover how MR can transform your operations today!",
-
-    image: MRIMAGE,
-    route: MR,
+      "Our skilled artisans craft highly detailed miniatures that create stunning cinematic effects. From architectural models to elaborate landscapes, we build precise scaled replicas that seamlessly integrate with full-scale filming and visual effects.",
+    cta: "See how our miniatures can enhance your production value.",
+    image: Miniatures,
+    // route: MR,
   },
-
   {
     id: 5,
-    image: CINEMA,
-    title: "cinema Previz",
+    image: Custom,
+    title: "Custom-Made Art Pieces",
     description:
-      "Enhance your filmmaking process with TRINITY-XR;s Cinema Previsualization (Previz) services! We create detailed 3D animations and storyboards that allow filmmakers to visualize camera angles, lighting, and scene compositions before shooting. Our expert team helps streamline production, reduce costs, and identify challenges early.",
-
-    cta: "Discover how our previz services can elevate your project today!",
-    route: CINE,
+      "We create exclusive art installations and decorative elements that elevate your visual narrative. Our team designs and produces unique pieces that enhance set aesthetics while supporting your story's themes and cultural context.",
+    cta: "Discover how our custom art can enhance your production design.",
+    // route: CINE,
   },
   {
     id: 6,
-    image: MVPIMAGE,
-    title: "MVP product building",
+    image: animaetronics,
+    title: "Animatronics",
     description:
-      "Launch your idea with TRINITY-XR's MVP(Minimum Viable Product) development services! Our expert team helps you define core features and develop a streamlined version of your product that meets user needs. We use agile methodologies for rapid iteration and feedback, minimizing risk and speeding up your time to market. ",
-
-    cta: "Discover how our MVP services can pave the way for your product's success today!",
-    route: MVP,
+      "Our cutting-edge animatronic creations bring impossible characters to life. We design, build, and operate sophisticated mechanical figures that integrate seamlessly with live-action sequences, providing realistic movement and interaction on set.",
+    cta: "Learn how our animatronics can add magic to your production.",
+    // route: MVP,
   },
 ];
 
@@ -117,9 +110,8 @@ const ServiceCarousel = () => {
       };
     } else if (index === currentIndex - 1) {
       return {
-        transform: `scale(0.9) translateX(${
-          direction === 1 ? "-20%" : "-20%"
-        })`,
+        transform: `scale(0.9) translateX(${direction === 1 ? "-20%" : "-20%"
+          })`,
         opacity: 0.5,
         zIndex: 10,
       };
@@ -140,20 +132,20 @@ const ServiceCarousel = () => {
   return (
     <div id="#services" className="   py-20  ">
       <div className="relative h-auto space-y-0  ">
-        <div className="md:text-left text-center px-6   md:text-5xl text-3xl md:pl-32 font-bold uppercase tracking-wider pb-2 ">
-        Featured Projects
+        <div className="md:text-left text-center px-6   md:text-5xl text-3xl md:pl-40 font-bold   pb-2 ">
+          Core Services
         </div>
         <div className="flex md:flex-row flex-col md:h-[60vh] h-full items-center justify-between md:gap-8">
           {/* Cards Container */}
-          <div className="relative md:w-1/2 w-full   h-full  flex items-center justify-center overflow-visible  max-md:px-20 ">
-            <div className="relative w-3/4 pt-5 min-h-[300px] h-full  flex items-center justify-center gap-0  ">
+          <div className="relative md:w-3/4 w-full  h-full  flex items-center justify-center overflow-visible  max-md:px-20 ">
+            <div className="relative w-full pt-5 min-h-[300px] h-full  flex items-center justify-center gap-0  ">
               {services.map((service, index) => (
                 <div
                   key={service.id}
-                  className="absolute h-5/6 aspect-[5/6] transition-all duration-500 ease-in-out"
+                  className="absolute w-3/4 h-5/6 aspect-[5/6] transition-all duration-500 ease-in-out"
                   style={getSlideStyle(index)}
                 >
-                  <a href={service?.route} className=" cursor-pointer">
+                  <a className=" cursor-pointer">
                     <div className="w-full h-full rounded-3xl overflow-hidden border-white border-opacity-50 border ">
                       <div
                         className={`absolute inset-0 bg-gradient-to-br  opacity-60`}
@@ -204,7 +196,7 @@ const ServiceCarousel = () => {
             >
               <div className=" mb-3 mx-auto md:hidden block">
                 <a
-                  href={services[currentIndex].route}
+
                   className=" text-xl font-poppins w-auto   font-medium bg-primary text-white px-4 py-1 rounded-xl hover:bg-purple-700 transition-colors duration-300"
                 >
                   know more
@@ -219,7 +211,7 @@ const ServiceCarousel = () => {
               </p>
               <div className=" md:block hidden pt-3 ">
                 <a
-                  href={services[currentIndex].route}
+
                   className=" text-xl font-poppins    font-medium bg-primary text-white px-6 py-2 rounded-xl hover:bg-purple-700 transition-colors duration-300"
                 >
                   know more
@@ -230,7 +222,7 @@ const ServiceCarousel = () => {
         </div>
 
         {/* Navigation */}
-        <div className=" md:flex items-center justify-center gap-10 md:w-1/2 mt-10 hidden">
+        <div className=" md:flex items-center justify-center gap-10 w-full mt-10 hidden">
           <button
             onClick={prevSlide}
             className="p-2 rounded-full bg-primary text-white hover:bg-gray-700 transition-colors duration-300"
@@ -244,9 +236,8 @@ const ServiceCarousel = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === currentIndex ? "bg-purple-600 w-8" : "bg-secondary"
-                }`}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex ? "bg-white w-8" : "bg-gray"
+                  }`}
               />
             ))}
           </div>

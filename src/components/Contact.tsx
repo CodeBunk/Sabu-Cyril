@@ -66,176 +66,182 @@ const Contact = () => {
   };
 
   return (
-    <div
-      id="#contact"
-      className="grid md:grid-cols-2 font-poppins pt-20 items-center py-20 md:h-screen gap-10"
-    >
-      <div className="w-full md:pl-10 px-10 ">
-        <div className="font-poppins md:text-4xl  tracking-wide text-lg leading-relaxed">
-        Ready to create cinematic magic? Contact us today to bring your vision to life.
-        </div>
+
+    <div className="pb-16 pt-20 py-20 text-center md:h-screen min-h-screen">
+
+      <div className="font-bold font-menseal text-white text-5xl text-venter font-bold  relative">
+        Contact
       </div>
+      <div
+        id="#contact"
+        className="md:grid md:grid-cols-2 flex flex-col gap-10  font-poppins  items-center   h-full  gap-10"
+      >
+        <div className="w-full md:pl-10 px-10 ">
+          <div className="font-poppins md:text-4xl  tracking-wide text-lg leading-relaxed">
+            Ready to create cinematic magic? Contact us today to bring your vision to life.
+          </div>
+        </div>
 
-      <div className="w-full relative h-full md:pt-10 ">
-        {/* <img className="" src={image} alt="Contact Background" /> */}
-        <div className="absolute sm:top-20 top-28 w-full right-0 z-5 h-full z-10 opacity-100 bg-gray bg-opacity-30  p-10  rounded-3xl  ">
-          <form
-            onSubmit={formik.handleSubmit}
-            className="space-y-5 flex flex-col z-10 justify-center px-16 h-full "
-          >
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium font-poppins px-2 "
-              >
-                Name
-              </label>
-              <div className="p-0.5 bg-gradient-to-r h-10 flex mt-1 from-secondary to-primary rounded-lg ">
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.name}
-                  className="w-full font-poppins px-2 text-base h-9 rounded-md focus:outline-none bg-[#000000] opacity-100 bg-blend-none"
-                />
-              </div>
-              {formik.touched.name && formik.errors.name && (
-                <div className=" text-red font-poppins  text-sm mt-1">
-                  {formik.errors.name}
+        <div className="w-full relative md:h-full h-auto md:pt-10 ">
+          {/* <img className="" src={image} alt="Contact Background" /> */}
+          <div className="md:absolute sm:top-20 top-28 w-full right-0 z-5 h-full z-10 opacity-100 bg-gray bg-opacity-30  p-10  rounded-3xl  ">
+            <form
+              onSubmit={formik.handleSubmit}
+              className="space-y-5 flex flex-col z-10 justify-center px-16 h-full "
+            >
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium font-poppins px-2 "
+                >
+                  Name
+                </label>
+                <div className="p-0.5 bg-gradient-to-r h-10 flex mt-1 from-secondary to-primary rounded-lg ">
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.name}
+                    className="w-full font-poppins px-2 text-base h-9 rounded-md focus:outline-none bg-[#000000] opacity-100 bg-blend-none"
+                  />
                 </div>
-              )}
-            </div>
-
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium font-poppins px-2 "
-              >
-                Email
-              </label>
-              <div className="p-0.5 bg-gradient-to-r h-10 flex mt-1 from-secondary to-primary rounded-lg ">
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.email}
-                  className="w-full font-poppins px-2 text-base h-9 rounded-md focus:outline-none bg-[#000000] opacity-100 bg-blend-none"
-                />
+                {formik.touched.name && formik.errors.name && (
+                  <div className=" text-red font-poppins  text-sm mt-1">
+                    {formik.errors.name}
+                  </div>
+                )}
               </div>
-              {formik.touched.email && formik.errors.email && (
-                <div className=" text-red font-poppins  text-sm mt-1">
-                  {formik.errors.email}
+
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium font-poppins px-2 "
+                >
+                  Email
+                </label>
+                <div className="p-0.5 bg-gradient-to-r h-10 flex mt-1 from-secondary to-primary rounded-lg ">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.email}
+                    className="w-full font-poppins px-2 text-base h-9 rounded-md focus:outline-none bg-[#000000] opacity-100 bg-blend-none"
+                  />
                 </div>
-              )}
-            </div>
-
-            <div>
-              <label
-                htmlFor="contactNumber"
-                className="block text-sm font-medium font-poppins px-2 "
-              >
-                Contact Number
-              </label>
-              <div className="p-0.5 bg-gradient-to-r h-10 flex mt-1 from-secondary to-primary rounded-lg ">
-                <input
-                  id="contactNumber"
-                  name="contactNumber"
-                  type="text"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.contactNumber}
-                  className="w-full font-poppins px-2 text-base h-9 rounded-md focus:outline-none bg-[#000000] opacity-100 bg-blend-none"
-                />
+                {formik.touched.email && formik.errors.email && (
+                  <div className=" text-red font-poppins  text-sm mt-1">
+                    {formik.errors.email}
+                  </div>
+                )}
               </div>
-              {formik.touched.contactNumber && formik.errors.contactNumber && (
-                <div className=" text-red font-poppins  text-sm mt-1">
-                  {formik.errors.contactNumber}
+
+              <div>
+                <label
+                  htmlFor="contactNumber"
+                  className="block text-sm font-medium font-poppins px-2 "
+                >
+                  Contact Number
+                </label>
+                <div className="p-0.5 bg-gradient-to-r h-10 flex mt-1 from-secondary to-primary rounded-lg ">
+                  <input
+                    id="contactNumber"
+                    name="contactNumber"
+                    type="text"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.contactNumber}
+                    className="w-full font-poppins px-2 text-base h-9 rounded-md focus:outline-none bg-[#000000] opacity-100 bg-blend-none"
+                  />
                 </div>
-              )}
-            </div>
-
-            <div>
-              <label
-                htmlFor="organization"
-                className="block text-sm font-medium font-poppins px-2 "
-              >
-                Company Name (optional)
-              </label>
-              <div className="p-0.5 bg-gradient-to-r h-10 flex mt-1 from-secondary to-primary rounded-lg ">
-                <input
-                  id="organization"
-                  name="organization"
-                  type="text"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.organization}
-                  className="w-full font-poppins px-2 text-base h-9 rounded-md focus:outline-none bg-[#000000] opacity-100 bg-blend-none"
-                />
+                {formik.touched.contactNumber && formik.errors.contactNumber && (
+                  <div className=" text-red font-poppins  text-sm mt-1">
+                    {formik.errors.contactNumber}
+                  </div>
+                )}
               </div>
-            </div>
 
-            <div>
-              <label
-                htmlFor="description"
-                className="block text-sm font-medium font-poppins px-2 whitespace-nowrap "
-              >
-                What would you like to discuss ?
-              </label>
-              <div className="p-0.5 bg-gradient-to-r h-20 from-secondary to-primary rounded-lg mt-1 ">
-                <textarea
-                  id="description"
-                  name="description"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.description}
-                  className="w-full font-poppins px-2 text-base h-full focus:outline-none p-1 rounded-md bg-[#000000] opacity-100 bg-blend-none"
-                  rows={3}
-                ></textarea>
-              </div>
-              {formik.touched.description && formik.errors.description && (
-                <div className=" text-red font-poppins  text-sm mt-1">
-                  {formik.errors.description}
+              <div>
+                <label
+                  htmlFor="organization"
+                  className="block text-sm font-medium font-poppins px-2 "
+                >
+                  Company Name (optional)
+                </label>
+                <div className="p-0.5 bg-gradient-to-r h-10 flex mt-1 from-secondary to-primary rounded-lg ">
+                  <input
+                    id="organization"
+                    name="organization"
+                    type="text"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.organization}
+                    className="w-full font-poppins px-2 text-base h-9 rounded-md focus:outline-none bg-[#000000] opacity-100 bg-blend-none"
+                  />
                 </div>
-              )}
-            </div>
+              </div>
 
-            {/* Submit Button */}
-            <div>
-              <button
-                type="submit"
-                disabled={loading}
-                className={`" flex items-center  justify-center w-20 bg-gradient-to-r text-base px-3 py-2 rounded-md font-poppins  transition-all duration-400  from-[#6E27E0] to-[#460F9E] " ${
-                  loading
+              <div>
+                <label
+                  htmlFor="description"
+                  className="block text-sm font-medium font-poppins px-2 whitespace-nowrap "
+                >
+                  What would you like to discuss ?
+                </label>
+                <div className="p-0.5 bg-gradient-to-r h-20 from-secondary to-primary rounded-lg mt-1 ">
+                  <textarea
+                    id="description"
+                    name="description"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.description}
+                    className="w-full font-poppins px-2 text-base h-full focus:outline-none p-1 rounded-md bg-[#000000] opacity-100 bg-blend-none"
+                    rows={3}
+                  ></textarea>
+                </div>
+                {formik.touched.description && formik.errors.description && (
+                  <div className=" text-red font-poppins  text-sm mt-1">
+                    {formik.errors.description}
+                  </div>
+                )}
+              </div>
+
+              {/* Submit Button */}
+              <div>
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className={`" flex items-center  justify-center w-20 bg-gradient-to-r text-base px-3 py-2 rounded-md font-poppins  transition-all duration-400  from-[#6E27E0] to-[#460F9E] " ${loading
                     ? "opacity-50 "
                     : " hover:-translate-y-0.5 hover:scale-105 "
-                }`}
-              >
-                {loading ? (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    className=" animate-spin "
-                  >
-                    <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" />
-                    <path d="M21 3v5h-5" />
-                  </svg>
-                ) : (
-                  "Submit"
-                )}
-              </button>
-            </div>
-          </form>
+                    }`}
+                >
+                  {loading ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      className=" animate-spin "
+                    >
+                      <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" />
+                      <path d="M21 3v5h-5" />
+                    </svg>
+                  ) : (
+                    "Submit"
+                  )}
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>

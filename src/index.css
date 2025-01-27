@@ -9,52 +9,170 @@
 @font-face {
   font-family: "helvetica";
   src: url("/fonts/helvetica/HelveticaNeueBlack.otf") format("truetype");
-  font-weight: 400;
+  font-weight: 900;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/HelveticaNeueBlackItalic.otf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/HelveticaNeueBold.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/HelveticaNeueBoldItalic.otf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/HelveticaNeueHeavy.otf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/HelveticaNeueHeavyItalic.otf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/HelveticaNeueItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/HelveticaNeueLight.otf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/HelveticaNeueLightItalic.otf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
 @font-face {
   font-family: "helvetica";
   src: url("/fonts/helvetica/HelveticaNeueMedium.otf") format("truetype");
   font-weight: 500;
-  font-style: medium;
+  font-style: normal;
 }
-@font-face {
-  font-family: "helvetica";
-  src: url("/fonts/helvetica/helvetica-semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: semibold;
-}
-/* 
 
 @font-face {
   font-family: "helvetica";
-  src: url("/fonts/helvetica/helvetica-bold.ttf") format("truetype");
+  src: url("/fonts/helvetica/HelveticaNeueMediumItalic.otf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/HelveticaNeueRoman.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/HelveticaNeueThin.otf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/HelveticaNeueThinItalic.otf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/HelveticaNeueUltraLight.otf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica/HelveticaNeueUltraLightItalic.otf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "menseal";
+  src: url("/fonts/Menseal/menseal-regular.ttf") format("truetype");
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "menseal";
+  src: url("/fonts/Menseal/menseal-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: "menseal";
+  src: url("/fonts/Menseal/menseal-semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: semibold;
+}
+
+@font-face {
+  font-family: "menseal";
+  src: url("/fonts/Menseal/menseal-bold.ttf") format("truetype");
   font-weight: 700;
   font-style: bold;
 }
+
 @font-face {
-  font-family: "helvetica";
-  src: url("/fonts/helvetica/helvetica-extrabold.ttf") format("truetype");
+  font-family: "menseal";
+  src: url("/fonts/Menseal/menseal-extrabold.ttf") format("truetype");
   font-weight: 800;
   font-style: extrabold;
 }
+
 @font-face {
-  font-family: "helvetica";
-  src: url("/fonts/helvetica/helvetica-black.ttf") format("truetype");
+  font-family: "menseal";
+  src: url("/fonts/Menseal/menseal-black.ttf") format("truetype");
   font-weight: 900;
   font-style: black;
 }
+
 @font-face {
   font-family: "72";
   src: url("/fonts/72/72-Light.ttf") format("truetype");
   font-weight: 500;
   font-style: light;
-} */
+}
 
 @keyframes progressBar {
   from {
     width: 0%;
   }
+
   to {
     width: 100%;
   }
@@ -62,18 +180,22 @@
 
 /* Hide scrollbars globally */
 * {
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
 }
 
 *::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and newer Edge */
+  display: none;
+  /* For Chrome, Safari, and newer Edge */
 }
 
 @keyframes marquee {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -83,6 +205,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -92,13 +215,16 @@
   display: inline-flex;
   animation: marquee 60s linear infinite;
 }
+
 @keyframes marquee-clients {
   0% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0%);
   }
