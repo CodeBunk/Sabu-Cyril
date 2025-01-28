@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 import Kalyan from "@/assets/images/Commercial/Kalyan.png";
 import GM from "@/assets/images/Commercial/gm.png";
-import Amazon from "@/assets/images/Commercial/AMAZON.png";
+import Amazon from "@/assets/images/Commercial/amazon.png";
 import { useSwipeable } from "react-swipeable";
 
 import {
