@@ -233,7 +233,7 @@ const Footer = () => {
                 </li> */}
                 <li>
                   <a
-                    href="mailto:info@trinityxr.in"
+                    href="mailto:info@sabucyril.in"
                     className="font-poppins  text-[#C3C3C4] hover:text-white"
                   >
                     sabucyril@gmail.com

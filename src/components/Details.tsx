@@ -69,10 +69,10 @@ const Details = () => {
                 </svg>
               </div>
               <a
-                href="mailto:info@trinityxr.in"
+                href="mailto:info@sabucyril.in"
                 className=" font-poppins font-medium "
               >
-                info@trinityxr.in
+                info@sabucyril.in
               </a>
             </div>
             <div className=" font-poppins md:text-xl text-lg leading-relaxed flex items-center gap-2 ">
