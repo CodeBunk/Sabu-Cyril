@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import image from "@/assets/images/Contactbg.png";
+// import image from "@/assets/images/Contactbg.png";
 import { useFormik } from "formik";
 import { z } from "zod";
 import emailjs from "@emailjs/browser";
 import { PUBLIC, SERVICE, TEMPALTE } from "@/config";
 import toast from "react-hot-toast";
+
 // Define the Zod schema for form validation
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters long"),
