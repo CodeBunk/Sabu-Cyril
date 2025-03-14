@@ -110,11 +110,11 @@ const Featured = () => {
         id="#featured"
         className="text-left md:h-screen  flex flex-col w-full max-w-7xl mx-auto  py-20 px-10 "
       >
-        <div className="font-bold font-menseal text-black text-5xl   text-center font-bold pb-3 relative">
+        <div className="font-bold font-menseal text-black text-5xl   text-center  pb-3 relative">
           Featured
           {/* <div className=" absolute   bottom-6  md:w-1/2 w-full h-1 bg-gradient-to-r from-transparent to-transparent via-primary "></div> */}
         </div>
-        <div className="font-bold font-menseal text-black font-bold pb-3 relative">
+        <div className="font-bold font-menseal text-black  pb-3 relative">
           Projects
           {/* <div className=" absolute   bottom-6  md:w-1/2 w-full h-1 bg-gradient-to-r from-transparent to-transparent via-primary "></div> */}
         </div>

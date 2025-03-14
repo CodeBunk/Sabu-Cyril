@@ -89,7 +89,7 @@ const Commercial = () => {
         className="text-left md:h-screen  flex flex-col w-full max-w-7xl mx-auto  py-20 px-10 "
       >
 
-        <div className="font-bold font-menseal text-black font-bold pb-3 relative">
+        <div className="font-bold font-menseal text-black  pb-3 relative">
           Commercial
           {/* <div className=" absolute   bottom-6  md:w-1/2 w-full h-1 bg-gradient-to-r from-transparent to-transparent via-primary "></div> */}
         </div>
