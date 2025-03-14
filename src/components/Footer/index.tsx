@@ -246,7 +246,7 @@ const Footer = () => {
 
         </div>
         <div className=" w-full  text-right font-menseal text-xs py-4 " >
-          DEignerd and Developed by <a href="https://www.linkedin.com/in/srinivasambati" target="_/blank" className=" hover:text-primary font-menseal font-black "> Srinivas Ambati </a>
+          Designed and Developed by <a href="https://www.linkedin.com/in/srinivasambati" target="_/blank" className=" hover:text-primary font-menseal font-semibold "> Srinivas Ambati </a>
         </div>
       </footer >
     </div >

@@ -133,7 +133,7 @@ const ServiceCarousel = () => {
     <div id="#services" className="   py-20  ">
       <div className="relative h-auto space-y-0  ">
         <div className="md:text-left text-center px-6   md:text-5xl text-3xl md:pl-40 font-bold   pb-2 ">
-          Core Services
+          Our Expertise
         </div>
         <div className="flex md:flex-row flex-col md:h-[60vh] h-full items-center justify-between md:gap-8">
           {/* Cards Container */}
