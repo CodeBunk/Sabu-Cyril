@@ -70,12 +70,12 @@ const Contact = () => {
 
     <div className="pb-16 pt-20 py-20 text-center md:h-screen min-h-screen">
 
-      <div className="font-bold font-menseal text-white text-5xl text-venter font-bold  relative">
+      <div className="font-bold font-menseal text-white text-5xl text-venter  relative">
         Contact
       </div>
       <div
         id="#contact"
-        className="md:grid md:grid-cols-2 flex flex-col gap-10  font-poppins  items-center   h-full  gap-10"
+        className="md:grid md:grid-cols-2 flex flex-col gap-10  font-poppins  items-center   h-full "
       >
         <div className="w-full md:pl-10 px-10 ">
           <div className="font-poppins md:text-4xl  tracking-wide text-lg leading-relaxed">
