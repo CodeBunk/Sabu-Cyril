@@ -130,10 +130,10 @@ const ServiceCarousel = () => {
   };
 
   return (
-    <div id="#services" className="   py-20  ">
+    <div id="#expertise" className="   py-20  ">
       <div className="relative h-auto space-y-0  ">
         <div className="md:text-left text-center px-6   md:text-5xl text-3xl md:pl-40 font-bold   pb-2 ">
-          Our Expertise
+          Team Expertise
         </div>
         <div className="flex md:flex-row flex-col md:h-[60vh] h-full items-center justify-between md:gap-8">
           {/* Cards Container */}
@@ -251,7 +251,7 @@ const ServiceCarousel = () => {
           </button>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

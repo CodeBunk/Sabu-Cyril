@@ -7,7 +7,7 @@ const Footer = () => {
     <div className=" bg-black bg-opacity-80   w-full ">
 
       <footer className=" text-white max-w-7xl mx-auto w-full font-poppins  py-10">
-        <div className=" mx-auto flex flex-col gap-10  md:flex-row md:items-start items-center md:px-10 px-6     justify-between">
+        <div className=" mx-auto w-full flex flex-col gap-10  md:flex-row md:items-start items-center md:px-10 px-6     justify-between">
           <div className="mb-6 md:mb-0 flex flex-col ">
             <img
               src={footer}
@@ -129,8 +129,8 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            <div>
+          <div className="grid grid-cols-1  justify-center items-center md:grid-cols-3 w-full max-md:items-center gap-6">
+            <div className=" max-md:w-3/4 ">
               <h4 className="text-lg font-bold mb-2">Links</h4>
               <ul className="space-y-2">
                 <li>
@@ -167,60 +167,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            {/* <div>
-              <h4 className="text-lg font-bold mb-2">Services</h4>
-              <ul className="space-y-2">
-                <li>
-                  <a
-                    href={VR}
-                    className="font-poppins  text-[#C3C3C4] hover:text-white"
-                  >
-                    VR Services
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={AR}
-                    className="font-poppins  text-[#C3C3C4] hover:text-white"
-                  >
-                    AR Services
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={MR}
-                    className="font-poppins  text-[#C3C3C4] hover:text-white"
-                  >
-                    MR Services
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={MODEL}
-                    className="font-poppins  text-[#C3C3C4] hover:text-white"
-                  >
-                    3d modelling & texturing
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={CINE}
-                    className="font-poppins  text-[#C3C3C4] hover:text-white"
-                  >
-                    Cinema Previz
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={MVP}
-                    className="font-poppins  text-[#C3C3C4] hover:text-white"
-                  >
-                    MVP Building
-                  </a>
-                </li>
-              </ul>
-            </div> */}
-            <div className=" max-md:col-span-2">
+
+            <div className=" max-md:col-span-2  max-md: text-center ">
               <h4 className="text-lg  font-bold mb-2">Contact Us</h4>
               <ul className="space-y-2">
                 {/* <li>
@@ -245,10 +193,11 @@ const Footer = () => {
           </div>
 
         </div>
-        <div className=" w-full  text-right font-menseal text-xs py-4 " >
-          Designed and Developed by <a href="https://www.linkedin.com/in/srinivasambati" target="_/blank" className=" hover:text-primary font-menseal font-semibold "> Srinivas Ambati </a>
-        </div>
+
       </footer >
+      <div className=" w-full  md:text-right text-center  font-menseal text-xs py-4   " >
+        Designed and Developed by <a href="https://www.linkedin.com/in/srinivasambati" target="_/blank" className=" hover:text-primary font-menseal font-semibold "> Srinivas Ambati </a>
+      </div>
     </div >
 
   );

@@ -18,44 +18,44 @@ import {
 } from "lucide-react";
 
 const Commercial = () => {
-  // const [selected, setSelected] = useState(0);
-  // const [currentIndex, setCurrentIndex] = useState(0);
+  const [selected, setSelected] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  // const intervalDuration = 2000; // 5 seconds
+  const intervalDuration = 2000; // 5 seconds
 
-  // const handlePrev = () => {
-  //   setCurrentIndex((prevSelected) =>
-  //     prevSelected < 1 ? Data?.length : prevSelected - 1
-  //   );
-  // };
+  const handlePrev = () => {
+    setCurrentIndex((prevSelected) =>
+      prevSelected < 1 ? Data?.length : prevSelected - 1
+    );
+  };
 
-  // // Move to the next item
-  // const handleNext = () => {
-  //   setCurrentIndex((prevSelected) =>
-  //     prevSelected < Data?.length ? prevSelected + 1 : 0
-  //   );
-  // };
-  // const handlePrevDEsktop = () => {
-  //   setSelected((prevSelected) => (prevSelected < 2 ? 4 : prevSelected - 1));
-  // };
+  // Move to the next item
+  const handleNext = () => {
+    setCurrentIndex((prevSelected) =>
+      prevSelected < Data?.length ? prevSelected + 1 : 0
+    );
+  };
+  const handlePrevDEsktop = () => {
+    setSelected((prevSelected) => (prevSelected < 2 ? 4 : prevSelected - 1));
+  };
 
-  // // Move to the next item
-  // const handleNextDesktop = () => {
-  //   setSelected((prevSelected) => (prevSelected < 3 ? prevSelected + 1 : 0));
-  // };
+  // Move to the next item
+  const handleNextDesktop = () => {
+    setSelected((prevSelected) => (prevSelected < 3 ? prevSelected + 1 : 0));
+  };
 
-  // const handlers = useSwipeable({
-  //   onSwipedLeft: handleNext,
-  //   onSwipedRight: handlePrev,
-  //   preventScrollOnSwipe: true, // Prevents page scrolling during swipe
-  //   trackMouse: true, // Allows swipe to work with mouse as well
-  // });
-  // const handlersDesktop = useSwipeable({
-  //   onSwipedLeft: handleNextDesktop,
-  //   onSwipedRight: handlePrevDEsktop,
-  //   preventScrollOnSwipe: true, // Prevents page scrolling during swipe
-  //   trackMouse: true, // Allows swipe to work with mouse as well
-  // });
+  const handlers = useSwipeable({
+    onSwipedLeft: handleNext,
+    onSwipedRight: handlePrev,
+    preventScrollOnSwipe: true, // Prevents page scrolling during swipe
+    trackMouse: true, // Allows swipe to work with mouse as well
+  });
+  const handlersDesktop = useSwipeable({
+    onSwipedLeft: handleNextDesktop,
+    onSwipedRight: handlePrevDEsktop,
+    preventScrollOnSwipe: true, // Prevents page scrolling during swipe
+    trackMouse: true, // Allows swipe to work with mouse as well
+  });
 
   const handleleft = () => { };
   const Data = [
@@ -86,19 +86,19 @@ const Commercial = () => {
   return (
     <div className=" bg-[#A8AFB9] ">
       <div
-        className="text-left md:h-screen  flex flex-col w-full max-w-7xl mx-auto  py-20 px-10 "
+        className="text-left md:h-full  flex flex-col w-full max-w-7xl mx-auto  md:py-20 py-10  px-10 "
       >
 
         <div className="font-bold font-menseal text-black  pb-3 relative">
           Commercial
           {/* <div className=" absolute   bottom-6  md:w-1/2 w-full h-1 bg-gradient-to-r from-transparent to-transparent via-primary "></div> */}
         </div>
-        <div className="font-poppins text-black opacity-60 md:text-xl text-xl pb-10 text-[#A7A7A8">
+        <div className="font-poppins text-black opacity-60 md:text-xl text-xl md:pb-10 pb-5 text-[#A7A7A8">
           Captivating Commercials, Unforgettable Impressions.
         </div>
         <div className=" relative  max-md:hidden  ">
-          {/* <div
-            className=" absolute top-[50%] bg-primary rounded-full   -left-7 z-[100] cursor-pointer"
+          <div
+            className={`" absolute top-[50%] bg-primary rounded-full ${Data?.length >= 3 ? " md:hidden " : " "}  -left-7 z-[100] cursor-pointer"`}
             onClick={() => (
               console.log(selected, "prev"),
               setSelected((prevSelected) =>
@@ -107,19 +107,19 @@ const Commercial = () => {
             )}
           >
             <ChevronLeft />
-          </div> */}
+          </div>
 
-          {/* <div
+          <div
             onClick={() => (
               console.log(selected, "next"),
               setSelected((prevSelected) =>
                 prevSelected < 3 ? prevSelected + 1 : 0
               )
             )}
-            className=" absolute top-[50%] bg-primary rounded-full  -right-7 z-[100] cursor-pointer"
+            className={`" absolute top-[50%] bg-primary rounded-full ${Data?.length >= 3 ? " md:hidden " : " "}  -right-7 z-[100] cursor-pointer"`}
           >
             <ChevronRight />
-          </div> */}
+          </div>
           <div
             // {...handlersDesktop}
             className=" max-md:hidden  w-full rounded-2xl flex overflow-hidden relative "
@@ -128,7 +128,7 @@ const Commercial = () => {
               className=" w-full gap-3 flex  transition-all duration-200  "
             // style={{
             //   transform:
-            //     selected < 4
+            //     selected < 3
             //       ? `translatex( -${selected * 35}%)`
             //       : `translatex(0)`,
             // }}
@@ -168,7 +168,7 @@ const Commercial = () => {
         </div>
 
         <div className=" relative  md:hidden  ">
-          {/* <div
+          <div
             className=" absolute top-[50%] bg-primary rounded-full   -left-7 z-[100] cursor-pointer"
             onClick={() =>
               setCurrentIndex((prevSelected) =>
@@ -177,9 +177,9 @@ const Commercial = () => {
             }
           >
             <ChevronLeft />
-          </div> */}
+          </div>
 
-          {/* <div
+          <div
             onClick={() =>
               setCurrentIndex((prevSelected) =>
                 prevSelected < Data?.length ? prevSelected + 1 : 0
@@ -188,7 +188,7 @@ const Commercial = () => {
             className=" absolute top-[50%] bg-primary rounded-full  -right-7 z-[100] cursor-pointer"
           >
             <ChevronRight />
-          </div> */}
+          </div>
           <div
             // {...handlers}
             className=" w-full rounded-2xl  flex overflow-hidden relative "
@@ -196,12 +196,12 @@ const Commercial = () => {
             {/* setCurrentIndex */}
             <div
               className=" w-full gap-0 flex  transition-all duration-200  "
-            // style={{
-            //   transform:
-            //     currentIndex < Data?.length
-            //       ? `translatex( -${currentIndex * 100}%)`
-            //       : `translatex(0)`,
-            // }}
+              style={{
+                transform:
+                  currentIndex < Data?.length
+                    ? `translatex( -${currentIndex * 100}%)`
+                    : `translatex(0)`,
+              }}
             >
               {Data?.map((data: any, index: number) => (
                 // <div className=" pr-5 w-1/3  flex-none h-full">

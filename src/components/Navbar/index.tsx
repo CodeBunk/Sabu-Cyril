@@ -12,7 +12,7 @@ const Navbar = () => {
   const [activeHash, setActiveHash] = useState("");
 
   const NavItems = [
-    { name: "Services", route: "/#services" },
+    { name: "Expertise", route: "/#expertise" },
     { name: "About Us", route: "/#about" },
     // { name: "Why Us", route: "/#whyus" },
     { name: "Featured", route: "/#featured" },

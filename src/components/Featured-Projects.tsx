@@ -107,10 +107,10 @@ const Featured = () => {
     <div className=" bg-[#A8AFB9] ">
 
       <div
-        id="#featured"
-        className="text-left md:h-screen  flex flex-col w-full max-w-7xl mx-auto  py-20 px-10 "
+        id="#featured" className="text-left md:h-full  flex flex-col w-full max-w-7xl mx-auto  md:py-20 py-10  px-10 "
+
       >
-        <div className="font-bold font-menseal text-black text-5xl   text-center  pb-3 relative">
+        <div className="font-bold font-menseal text-black text-5xl   text-center  pb-6 relative">
           Featured
           {/* <div className=" absolute   bottom-6  md:w-1/2 w-full h-1 bg-gradient-to-r from-transparent to-transparent via-primary "></div> */}
         </div>
@@ -118,7 +118,7 @@ const Featured = () => {
           Projects
           {/* <div className=" absolute   bottom-6  md:w-1/2 w-full h-1 bg-gradient-to-r from-transparent to-transparent via-primary "></div> */}
         </div>
-        <div className="font-poppins text-black opacity-60 md:text-xl text-xl pb-10 text-[#A7A7A8">
+        <div className="font-poppins text-black opacity-60 md:text-xl text-xl md:pb-10 pb-5 text-[#A7A7A8">
           Showcasing Cinematic Excellence
         </div>
         <div className=" relative  max-md:hidden  ">

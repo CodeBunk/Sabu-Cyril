@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className=" relative bg-black ">
 
-      <div className="text-4xl max-md:pt-32   z-10 text-white  ">
+      <div className="text-4xl max-md:pt-16  z-10 text-white  ">
         <Hero />
 
         <ServiceCarousel />
