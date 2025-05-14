@@ -4,7 +4,7 @@ import image1 from "@/assets/images/gallery/image1.jpg";
 import image2 from "@/assets/images/gallery/iamge2.jpg";
 import image3 from "@/assets/images/gallery/image3.jpeg";
 import image4 from "@/assets/images/gallery/iamge4.png";
-import image5 from "@/assets/images/gallery/image5.jpg";
+// import image5 from "@/assets/images/gallery/image5.jpg";
 import image6 from "@/assets/images/gallery/iamge6.jpg";
 
 const images = [
@@ -12,7 +12,7 @@ const images = [
     image2,
     image3,
     image4,
-    image5,
+    // image5,
     image6
 ];
 
