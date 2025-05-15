@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div
       id="#home"
-      className=" relative h-full md:h-screen border-primary border md:p-10 p-6  overflow-hidden  flex w-full lg:flex-row flex-col-reverse gap-10 pt-20  items-center  "
+      className=" relative h-full md:h-screen border-primary border md:p-10 p-6  overflow-hidden  flex w-full lg:flex-row flex-col-reverse gap-10 md:pt-20 pt-10  items-center  "
     >
       <img
         src={BG}
@@ -19,7 +19,7 @@ const Hero = () => {
         {/* <div className=" text-white font-menseal uppercase font-light md:text-8xl text-4xl whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-[#e5daf7] ">
           Sabu Cyril
         </div> */}
-        <div className=" font-menseal lg:pt-7 md:pt-3 pt-2 md:tracking-wider font-bold  md:text-5xl sm:text-3xl text-2xl ">
+        <div className="  font-gilroy lg:pt-7 md:pt-3 pt-2 md:tracking-wider font-medium  md:text-5xl sm:text-3xl text-3xl ">
           Crafting Immersive Cinematic Universes
         </div>
         <div className=" opacity-70 pt-3  font-normal font-IBM md:text-2xl text-lg  leading-[120%] ">
@@ -27,7 +27,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="z-20   md:pt-10 md:w-1/2 flex items-center  justify-center ">
-        <img src={image} alt="" className=" max-h-[60vh] max-md:max-h-[50vh]   border-transparent hover:scale-[101%] border object-center transition-all duration-500 rounded-xl " />
+        <img src={image} alt="" className=" md:max-h-[70vh] max-h-[60vh] shadow-lg shadow-white/10 max-md:max-h-[50vh]   border-transparent hover:scale-[101%] border object-center transition-all duration-500 rounded-xl " />
       </div>
     </div>
   );

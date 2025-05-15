@@ -121,13 +121,13 @@ const Footer = () => {
           </div>
 
           {/* Right Block - Links and Contact */}
-          <div className="flex flex-col md:flex-row w-full md:justify-end gap-8 text-left md:text-left">
+          <div className="flex flex-col  md:flex-row w-full md:justify-end gap-8 text-center md:text-left">
             <div>
               <h4 className="text-lg font-bold mb-2">Links</h4>
               <ul className="space-y-2">
                 {[
                   { href: "/#about", label: "About Us" },
-                  { href: "/#services", label: "Services" },
+                  { href: "/#expertise", label: "Expertise" },
                   { href: "/#featured", label: "Featured" },
                   { href: "/#gallery", label: "Gallery" },
                 ].map(({ href, label }) => (
@@ -164,7 +164,7 @@ const Footer = () => {
         </div>
       </footer>
 
-      <div className="text-center md:text-right text-xs text-white py-4 font-menseal px-6">
+      <div className="text-center md:text-right text-xs text-white py-4 font-gilory px-6">
         Designed and Developed by{" "}
         <a
           href="https://www.linkedin.com/in/srinivasambati"

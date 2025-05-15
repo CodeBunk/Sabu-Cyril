@@ -160,7 +160,7 @@ const ServiceCarousel = () => {
 
                       <div className=" uppercase rounded-b-3xl  text-xl  flex items-end pb-3 justify-center font-menseal font-bold  absolute bottom-0 h-20 text-balance  left-0 -0 w-full text-center bg-gradient-to-t from-black  to-transparent ">
                         {" "}
-                        <h2 className="md:text-2xl font-poppins  tracking-wide text-lg font-medium text-white max-sm:leading-[106%] w-3/4 break-words">
+                        <h2 className="md:text-2xl font-poppins  break-before-auto  md:tracking-wide text-sm font-medium text-white max-sm:leading-[106%] w-3/4 break-words">
                           {service.title}
                         </h2>
                       </div>
