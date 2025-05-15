@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className="  ">
         <div className=" -[#E50914] bg-black border-primary border-b w-full via-slate-500 ">
           {/* <div className="flex justify-between items-center font-menseal p-4 tracking-wide text-xl rounded-2xl font-regular bg-black"> */}
-          <div className="flex  justify-between items-center max-w-7xl   mx-auto font-menseal p-4 tracking-wide text-xl w-full rounded-2xl font-regular bg-black">
+          <div className="flex  justify-between items-center max-w-7xl   mx-auto font-IBM p-4 tracking-wide text-xl w-full rounded-2xl font-regular bg-black">
             <img
               onClick={() => Location("/#home")}
               loading="eager"
@@ -60,7 +60,7 @@ const Navbar = () => {
                   className={`${item?.route === "/" + window.location.hash
                     ? " text-primary   text-opacity-90 "
                     : ""
-                    }"group cursor-pointer hover:-translate-y-0.5 delay-50 transition-all duration-200"`}
+                    }"group cursor-pointer font-IBM hover:-translate-y-0.5 delay-50 transition-all duration-200"`}
                 >
                   {item.name}
                   {/* <div
@@ -76,7 +76,7 @@ const Navbar = () => {
             <div className="hidden md:block">
               <button
                 onClick={() => Location("/#contact")}
-                className=" bg-gradient-to-r  border-primary border px-3 py-2 rounded-xl  hover:-translate-y-0.5 transition-all duration-400  hover:scale-105 bg-primary to-secondary"
+                className=" bg-gradient-to-r  font-IBM border-primary border px-3 py-2 rounded-xl  hover:-translate-y-0.5 transition-all duration-400  hover:scale-105 bg-primary to-secondary"
               >
                 Contact us
               </button>

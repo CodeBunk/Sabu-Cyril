@@ -10,7 +10,8 @@ import {
 } from "react-router-dom";
 import Home from "./Pages/Home";
 import Layout from "./components/Layout/Layout";
-import { AR, CINE, MODEL, MR, MVP, VR } from "./Constants";
+import { PROSTHETICS, SPECIALPROPS, SETDESIGN, MINIATURES, CUSTOM, ANIMETRONICS } from "./Constants";
+import ComingSoon from "./Pages/ComingSoon";
 
 // import MRpage from "./Pages/MRpage";
 // import ARpage from "./Pages/ARpage";
@@ -44,12 +45,12 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
-            {/* <Route path={VR} element={<VRpage />} />
-            <Route path={MR} element={<MRpage />} />
-            <Route path={AR} element={<ARpage />} />
-            <Route path={MODEL} element={<Modelling />} />
-            <Route path={CINE} element={<CinePreviz />} />
-            <Route path={MVP} element={<MVPpage />} /> */}
+            <Route path={PROSTHETICS} element={<ComingSoon />} />
+            <Route path={SPECIALPROPS} element={<ComingSoon />} />
+            <Route path={SETDESIGN} element={<ComingSoon />} />
+            <Route path={MINIATURES} element={<ComingSoon />} />
+            <Route path={CUSTOM} element={<ComingSoon />} />
+            <Route path={ANIMETRONICS} element={<ComingSoon />} />
           </Route>
         </Routes>
       </Router>

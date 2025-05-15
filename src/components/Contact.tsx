@@ -68,27 +68,27 @@ const Contact = () => {
 
   return (
 
-    <div className="pb-16 pt-20 py-20 text-center md:h-screen min-h-screen">
+    <div className=" pt-10 py-10 text-center md:h-full max-w-7xl mx-auto  min-h-screen">
 
-      <div className="font-bold font-menseal text-white text-5xl text-venter  relative">
+      <div className="font-menseal   font-semibold  tracking-wider  text-white text-5xl text-venter  relative">
         Contact
       </div>
       <div
         id="#contact"
-        className="md:grid md:grid-cols-2 flex flex-col gap-10  font-poppins  items-center   h-full "
+        className="md:grid md:grid-cols-2 flex flex-col gap-10  font-poppins  items-center  pt-10 h-auto "
       >
         <div className="w-full md:pl-10 px-10 ">
-          <div className="font-poppins md:text-4xl  tracking-wide text-lg leading-relaxed">
+          <div className=" font-gilroy md:text-4xl  tracking-wide text-lg leading-relaxed">
             Ready to create cinematic magic? Contact us today to bring your vision to life.
           </div>
         </div>
 
-        <div className="w-full relative md:h-full h-auto md:pt-10 ">
+        <div className="w-full relative md:h-auto h-auto md:pt-10 ">
           {/* <img className="" src={image} alt="Contact Background" /> */}
-          <div className="md:absolute sm:top-20 top-28 w-full right-0 z-5 h-full z-10 opacity-100 bg-gray bg-opacity-30  p-10  rounded-3xl  ">
+          <div className="md:absolue sm:top-20 top-28 w-full right-0 z-5 h-full z-10 opacity-100 bg-gray bg-opacity-30  p-10  rounded-3xl  ">
             <form
               onSubmit={formik.handleSubmit}
-              className="space-y-5 flex flex-col z-10 justify-center px-16 h-full "
+              className="space-y-5 flex flex-col z-10 justify-center text-left px-1 h- "
             >
               <div>
                 <label
@@ -97,7 +97,7 @@ const Contact = () => {
                 >
                   Name
                 </label>
-                <div className="p-0.5 bg-gradient-to-r h-10 flex mt-1 from-secondary to-primary rounded-lg ">
+                <div className="p-0.5 bg-gradient-to-r h-10 flex mt-1 to-primary/40 from-primary/50 rounded-lg ">
                   <input
                     id="name"
                     name="name"
@@ -122,7 +122,7 @@ const Contact = () => {
                 >
                   Email
                 </label>
-                <div className="p-0.5 bg-gradient-to-r h-10 flex mt-1 from-secondary to-primary rounded-lg ">
+                <div className="p-0.5 bg-gradient-to-r h-10 flex mt-1 from-primary/40 to-primary/50 rounded-lg ">
                   <input
                     id="email"
                     name="email"
@@ -147,7 +147,7 @@ const Contact = () => {
                 >
                   Contact Number
                 </label>
-                <div className="p-0.5 bg-gradient-to-r h-10 flex mt-1 from-secondary to-primary rounded-lg ">
+                <div className="p-0.5 bg-gradient-to-r h-10 flex mt-1 to-primary/40 from-primary/50 rounded-lg ">
                   <input
                     id="contactNumber"
                     name="contactNumber"
@@ -172,7 +172,7 @@ const Contact = () => {
                 >
                   Company Name (optional)
                 </label>
-                <div className="p-0.5 bg-gradient-to-r h-10 flex mt-1 from-secondary to-primary rounded-lg ">
+                <div className="p-0.5 bg-gradient-to-r h-10 flex mt-1 from-primary/40 to-primary/50 rounded-lg ">
                   <input
                     id="organization"
                     name="organization"
@@ -192,7 +192,7 @@ const Contact = () => {
                 >
                   What would you like to discuss ?
                 </label>
-                <div className="p-0.5 bg-gradient-to-r h-20 from-secondary to-primary rounded-lg mt-1 ">
+                <div className="p-0.5 bg-gradient-to-r h-20 to-primary/40 from-primary/50 rounded-lg mt-1 ">
                   <textarea
                     id="description"
                     name="description"
@@ -215,7 +215,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className={`" flex items-center  justify-center w-20 bg-gradient-to-r text-base px-3 py-2 rounded-md font-poppins  transition-all duration-400  from-[#6E27E0] to-[#460F9E] " ${loading
+                  className={`" flex items-center  justify-center w-20 bg-gradient-to-r text-base px-3 py-2 rounded-md font-poppins  transition-all duration-400  from-primary/80 to-primary/60 " ${loading
                     ? "opacity-50 "
                     : " hover:-translate-y-0.5 hover:scale-105 "
                     }`}

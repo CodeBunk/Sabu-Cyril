@@ -5,12 +5,17 @@ module.exports = {
     extend: {
       fontFamily: {
         Work: ["Work Sans", "sans-serif"],
+        gilroy: ['Gilroy', 'sans-serif'],
         factum: ["Faktum Test", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
         inter: ["Inter", "sans-serif"],
         menseal: ["menseal", "sans-serif"],
         helvetica: ["helvetica", "sans-serif"],
         new: ["71", "sans-serif"],
+        cinzel: ["cinzel", "sans-serif"],
+        Playfair: ["Playfair Display", "serif"],
+        Libre: ["Libre Franklin", "sans-serif"],
+        IBM: ["IBM Plex Sans", "sans-serif"],
       },
       colors: {
         "black-3": "#14171F",
@@ -30,7 +35,7 @@ module.exports = {
         gray: "#525B7A",
         neutral: "#E0E3EB",
         primary: "#E50914",
-        secondary: "#2A0070",
+        secondary: "#00161c9d",
       },
       boxShadow: {
         "2xl":

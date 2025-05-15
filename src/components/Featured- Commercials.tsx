@@ -86,11 +86,11 @@ const Commercial = () => {
   return (
     <div className=" bg-[#A8AFB9] ">
       <div
-        className="text-left md:h-full  flex flex-col w-full max-w-7xl mx-auto  md:py-20 py-10  px-10 "
+        className=" md:h-full  flex flex-col w-full text-center max-w-7xl mx-auto  md:py-20 py-10  px-10 "
       >
 
-        <div className="font-bold font-menseal text-black  pb-3 relative">
-          Commercial
+        <div className="font-bold font-gilroy     text-black  pb-3 relative">
+          Commercials
           {/* <div className=" absolute   bottom-6  md:w-1/2 w-full h-1 bg-gradient-to-r from-transparent to-transparent via-primary "></div> */}
         </div>
         <div className="font-poppins text-black opacity-60 md:text-xl text-xl md:pb-10 pb-5 text-[#A7A7A8">
@@ -143,7 +143,7 @@ const Commercial = () => {
                     className="  aspect-video object-cover h-52 w-full "
                   />
                   <div className=" w-full flex-grow  px-6 pt-4 flex flex-col gap- items-center text-center ">
-                    <div className="   font- italic  md:text-2xl sm:text-lg text-xs font-bold">
+                    <div className="   font-gilroy   md:text-2xl sm:text-lg text-xs  font-medium ">
                       {data?.name}
                     </div>
                     {/* <div className=" pb- font-poppins font-normal md:text-xl sm:text-base text-xs">
@@ -205,14 +205,14 @@ const Commercial = () => {
             >
               {Data?.map((data: any, index: number) => (
                 // <div className=" pr-5 w-1/3  flex-none h-full">
-                <div className="  w-full flex-none h-[370px]  select-none bg-gradient-to-t from-[#2A0070] md:via-[#00161c] via-[#00161c9d]    to-transparent z-10   flex flex-col  transition-all duration-700 ease-in-out  rounded-2xl  ">
+                <div className="  w-full flex-none h-[370px]  select-none bg-gradient-to-t from-black md:via-[#00161c] via-[#00161c9d]    to-transparent  z-10   flex flex-col  transition-all duration-700 ease-in-out  rounded-2xl  ">
                   <div>
                     <img
                       src={data?.image}
                       alt={data?.name} className="  aspect-video object-cover h-52 w-full "
                     />
                     <div className=" w-full flex-grow  px-6 pt-4  flex flex-col gap- items-center text-center ">
-                      <div className=" italic  font-  md:text-xl sm:text-lg text-xs font-bold">
+                      <div className="   font-gilroy  md:text-xl sm:text-lg text-xs font-medium">
                         {data?.name}
                       </div>
 

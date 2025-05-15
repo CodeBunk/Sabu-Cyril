@@ -7,7 +7,7 @@ import animaetronics from "@/assets/images/services/animaetronics.jpg";
 import SetDesign from "@/assets/images/services/set.png";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { AR, CINE, MODEL, MR, VR, MVP } from "@/Constants";
+import { PROSTHETICS, SPECIALPROPS, SETDESIGN, MINIATURES, CUSTOM, ANIMETRONICS } from "@/Constants";
 import { useNavigate } from "react-router-dom";
 const services = [
   {
@@ -17,7 +17,7 @@ const services = [
     description:
       "Our expert team creates highly realistic prosthetics that bring characters to life. From subtle aging effects to complete character transformations, we craft custom prosthetics that enhance storytelling while ensuring comfort and natural movement for performers.",
     cta: "Discover how our prosthetics can transform your characters.",
-    // route: MODEL,
+    route: PROSTHETICS,
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const services = [
       "We design and fabricate unique, story-driven props that add authenticity to your production. From hero weapons and magical artifacts to period-accurate tools, each piece is meticulously crafted to support your narrative and withstand the demands of filming.",
     cta: "Explore our custom prop creation services.",
     image: SpecialProp,
-    // route: VR,
+    route: SPECIALPROPS,
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const services = [
       "Transform your vision into reality with our comprehensive set design and construction services. We create immersive environments ranging from historical period recreations to futuristic worlds, with meticulous attention to detail and authenticity.",
     cta: "Let us bring your cinematic worlds to life.",
     image: SetDesign,
-    // route: AR,
+    route: SETDESIGN,
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const services = [
       "Our skilled artisans craft highly detailed miniatures that create stunning cinematic effects. From architectural models to elaborate landscapes, we build precise scaled replicas that seamlessly integrate with full-scale filming and visual effects.",
     cta: "See how our miniatures can enhance your production value.",
     image: Miniatures,
-    // route: MR,
+    route: MINIATURES,
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ const services = [
     description:
       "We create exclusive art installations and decorative elements that elevate your visual narrative. Our team designs and produces unique pieces that enhance set aesthetics while supporting your story's themes and cultural context.",
     cta: "Discover how our custom art can enhance your production design.",
-    // route: CINE,
+    route: CUSTOM,
   },
   {
     id: 6,
@@ -62,7 +62,7 @@ const services = [
     description:
       "Our cutting-edge animatronic creations bring impossible characters to life. We design, build, and operate sophisticated mechanical figures that integrate seamlessly with live-action sequences, providing realistic movement and interaction on set.",
     cta: "Learn how our animatronics can add magic to your production.",
-    // route: MVP,
+    route: ANIMETRONICS,
   },
 ];
 
@@ -132,7 +132,8 @@ const ServiceCarousel = () => {
   return (
     <div id="#expertise" className="   py-20  ">
       <div className="relative h-auto space-y-0  ">
-        <div className="md:text-left text-center px-6   md:text-5xl text-3xl md:pl-40 font-bold   pb-2 ">
+        <div className="md:text-center md:w-1/2 text-center px-6    tracking-wir font-gilroy font-medium md:text-5xl text-3xl md:pl-40 font-   pb-2 ">
+
           Team Expertise
         </div>
         <div className="flex md:flex-row flex-col md:h-[60vh] h-full items-center justify-between md:gap-8">
@@ -159,7 +160,7 @@ const ServiceCarousel = () => {
 
                       <div className=" uppercase rounded-b-3xl  text-xl  flex items-end pb-3 justify-center font-menseal font-bold  absolute bottom-0 h-20 text-balance  left-0 -0 w-full text-center bg-gradient-to-t from-black  to-transparent ">
                         {" "}
-                        <h2 className="md:text-2xl text-lg font-bold text-white max-sm:leading-[106%] w-3/4 break-words">
+                        <h2 className="md:text-2xl font-poppins  tracking-wide text-lg font-medium text-white max-sm:leading-[106%] w-3/4 break-words">
                           {service.title}
                         </h2>
                       </div>
@@ -196,9 +197,11 @@ const ServiceCarousel = () => {
             >
               <div className=" mb-3 mx-auto md:hidden block">
                 <a
+                  href={services[currentIndex].route}
 
-                  className=" text-xl font-poppins w-auto   font-medium bg-primary text-white px-4 py-1 rounded-xl hover:bg-purple-700 transition-colors duration-300"
+                  className="  cursor-pointer text-xl font-poppins w-auto   font-medium bg-primary text-white px-4 py-1 rounded-xl hover:bg-purple-700 transition-colors duration-300"
                 >
+                  {/* <div className=" select-none">  </div> */}
                   know more
                 </a>
               </div>
@@ -211,8 +214,8 @@ const ServiceCarousel = () => {
               </p>
               <div className=" md:block hidden pt-3 ">
                 <a
-
-                  className=" text-xl font-poppins    font-medium bg-primary text-white px-6 py-2 rounded-xl hover:bg-purple-700 transition-colors duration-300"
+                  href={services[currentIndex].route}
+                  className=" text-xl font-poppins  cursor-pointer select-none   font-medium bg-primary text-white px-6 py-2 rounded-xl hover:bg-purple-700 transition-colors duration-300"
                 >
                   know more
                 </a>

@@ -16,14 +16,14 @@ const Hero = () => {
       />
 
       <div className=" z-20 flex-grow lg:w-1/2 w-3/4 ">
-        <div className=" text-white font-menseal uppercase font-light md:text-8xl text-4xl whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-[#e5daf7] ">
+        {/* <div className=" text-white font-menseal uppercase font-light md:text-8xl text-4xl whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-[#e5daf7] ">
           Sabu Cyril
+        </div> */}
+        <div className=" font-menseal  lg:pt-7 md:pt-3 pt-2 tracking-wider font-bold  md:text-5xl sm:text-3xl text-2xl ">
+          Crafting Immersive Cinematic Universes
         </div>
-        <div className=" lg:pt-7 md:pt-3 pt-2  font-medium sm:text-[30px] text-lg ">
-          Crafting Cinematic Worlds
-        </div>
-        <div className=" opacity-60 pt-3  font-light  md:text-3xl text-lg tracking-wide leading-[120%] ">
-          Over 30 Years of Transforming Cinematic Visions into Reality
+        <div className=" opacity-70 pt-3  font-normal font-IBM md:text-2xl text-lg  leading-[120%] ">
+          Three Decades of Breathing Life into Extraordinary Cinematic Dreams
         </div>
       </div>
       <div className="z-20   md:pt-10 md:w-1/2 flex items-center  justify-center ">

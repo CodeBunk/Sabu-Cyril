@@ -6,7 +6,6 @@ import Modeling from "@/assets/images/services/Loop.gif";
 import MVPIMAGE from "@/assets/images/services/MVP.png";
 import CINEMA from "@/assets/images/services/Cinemapng.png";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { AR, CINE, MODEL, MR, VR, MVP } from "@/Constants";
 import { useNavigate } from "react-router-dom";
 
 const services = [
@@ -131,7 +130,7 @@ const FeatureCarousel = () => {
 
   return (
     <div id="#featured" className="   py-20  ">
-      <div className=" text-center px-6   md:text-5xl text-3xl md:pl-32 font-bold uppercase tracking-wider pb-2 ">
+      <div className=" text-center font-gilroy px-6   md:text-5xl text-3xl md:pl-32 font-bold uppercase tracking-wider pb-2 ">
         Featured Projects
       </div>
       <div className="relative h-auto space-y-0  ">
