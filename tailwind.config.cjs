@@ -13,7 +13,6 @@ module.exports = {
         helvetica: ["helvetica", "sans-serif"],
         new: ["71", "sans-serif"],
         cinzel: ["cinzel", "sans-serif"],
-        Playfair: ["Playfair Display", "serif"],
         Libre: ["Libre Franklin", "sans-serif"],
         IBM: ["IBM Plex Sans", "sans-serif"],
       },
