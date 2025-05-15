@@ -93,8 +93,9 @@ const Commercial = () => {
           Commercials
           {/* <div className=" absolute   bottom-6  md:w-1/2 w-full h-1 bg-gradient-to-r from-transparent to-transparent via-primary "></div> */}
         </div>
+
         <div className="font-poppins text-black opacity-60 md:text-xl text-xl md:pb-10 pb-5 text-[#A7A7A8">
-          Captivating Commercials, Unforgettable Impressions.
+          Captivating Commercials: Crafting Unforgettable Impressions Across 2600+ Masterpieces
         </div>
         <div className=" relative  max-md:hidden  ">
           <div
