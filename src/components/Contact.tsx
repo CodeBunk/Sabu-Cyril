@@ -70,7 +70,7 @@ const Contact = () => {
 
     <div className=" pt-10 py-10 text-center md:h-full max-w-7xl mx-auto  min-h-screen">
 
-      <div className="font-menseal   font-semibold  tracking-wider  text-white text-5xl text-venter  relative">
+      <div className="font-gilroy   font-semibold    text-white text-5xl text-venter  relative">
         Contact
       </div>
       <div
@@ -83,9 +83,9 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="w-full relative md:h-auto h-auto md:pt-10 ">
+        <div className="w-full relative md:h-auto h-auto md:pt-10 max-md:p-3 ">
           {/* <img className="" src={image} alt="Contact Background" /> */}
-          <div className="md:absolue sm:top-20 top-28 w-full right-0 z-5 h-full z-10 opacity-100 bg-gray bg-opacity-30  p-10  rounded-3xl  ">
+          <div className="md:absolue sm:top-20 top-28 w-full right-0 z-5 h-full z-10 opacity-100 bg-gray bg-opacity-30 md:p-10 p-5 rounded-3xl  ">
             <form
               onSubmit={formik.handleSubmit}
               className="space-y-5 flex flex-col z-10 justify-center text-left px-1 h- "

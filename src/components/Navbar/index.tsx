@@ -60,7 +60,7 @@ const Navbar = () => {
                   className={`${item?.route === "/" + window.location.hash
                     ? " text-primary   text-opacity-90 "
                     : ""
-                    }"group cursor-pointer font-IBM hover:-translate-y-0.5 delay-50 transition-all duration-200"`}
+                    }"group cursor-pointer font-gilory hover:-translate-y-0.5 delay-50 transition-all duration-200"`}
                 >
                   {item.name}
                   {/* <div
@@ -111,7 +111,7 @@ const Navbar = () => {
               <a
                 key={item.name}
                 // href={item.route}
-                className="text-white hover:text-primary transition-colors duration-200"
+                className="text-white hover:text-primary font-IBM transition-colors duration-200"
                 onClick={() => handleNavigation(item.route)}
               >
                 {item.name}
@@ -119,7 +119,7 @@ const Navbar = () => {
             ))}
             <button
               onClick={() => handleNavigation("/#contact")}
-              className="bg-gradient-to-r from-primary to-secondary hover:-translate-y-0.5 transition-all duration-400 hover:scale-105 py-2 px-3 rounded-xl"
+              className="bg-gradient-to-r from-primary font-gilory to-secondary hover:-translate-y-0.5 transition-all duration-400 hover:scale-105 py-2 px-3 rounded-xl"
             >
               Contact us
             </button>

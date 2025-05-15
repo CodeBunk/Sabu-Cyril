@@ -37,7 +37,7 @@ export default function Gallery() {
 
     return (
         <div id="#gallery" className=" max-w-7xl mx-auto py-20   p-4 ">
-            <div className="font-bold font-menseal text-white text-5xl pb-16  text-center   relative">
+            <div className="font-semibold font-gilroy text-white text-5xl pb-16  text-center   relative">
                 Gallery
             </div>
             <div className="grid md:grid-cols-3 grid-cols-2  w-full gap-4 ">

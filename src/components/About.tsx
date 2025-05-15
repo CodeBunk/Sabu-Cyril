@@ -8,7 +8,7 @@ const About = () => {
       className=" flex md:flex-row flex-col  items-center py-20 md:h-screen px-10  gap-10  "
     >
       <div className=" md:w-3/5 w-full pb-10    ">
-        <div className=" font-menseal  tracking-wide font-semibold pb-20  relative ">
+        <div className="  font-gilroy   font-semibold pb-20  relative ">
           About Sabu Cyril
           <div className=" absolute  bottom-16 w-1/2 h-1 bg-gradient-to-r from-transparent to-transparent via-primary "></div>
         </div>
