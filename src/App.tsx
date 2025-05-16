@@ -13,6 +13,11 @@ import Layout from "./components/Layout/Layout";
 import { PROSTHETICS, SPECIALPROPS, SETDESIGN, MINIATURES, CUSTOM, ANIMETRONICS } from "./Constants";
 import ComingSoon from "./Pages/ComingSoon";
 import Miniatures from "./Pages/Miniatures";
+import Prosthetics from "./Pages/prosthetics";
+import SpecialProps from "./Pages/SpecialProps";
+import SetDesign from "./Pages/SetDesign";
+import Animatronics from "./Pages/Animatronics";
+import CustomProps from "./Pages/CustomProps";
 
 // import MRpage from "./Pages/MRpage";
 // import ARpage from "./Pages/ARpage";
@@ -46,12 +51,12 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
-            <Route path={PROSTHETICS} element={<ComingSoon />} />
-            <Route path={SPECIALPROPS} element={<ComingSoon />} />
-            <Route path={SETDESIGN} element={<ComingSoon />} />
+            <Route path={PROSTHETICS} element={<Prosthetics />} />
+            <Route path={SPECIALPROPS} element={<SpecialProps />} />
+            <Route path={SETDESIGN} element={<SetDesign />} />
             <Route path={MINIATURES} element={<Miniatures />} />
-            <Route path={CUSTOM} element={<ComingSoon />} />
-            <Route path={ANIMETRONICS} element={<ComingSoon />} />
+            <Route path={CUSTOM} element={<CustomProps />} />
+            <Route path={ANIMETRONICS} element={<Animatronics />} />
           </Route>
         </Routes>
       </Router>
