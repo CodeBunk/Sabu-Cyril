@@ -29,7 +29,7 @@ export default function Gallery() {
     };
 
     return (
-        <div id="gallery" className="max-w-7xl mx-auto py-20 px-4">
+        <div id="#gallery" className="max-w-7xl mx-auto py-20 px-4">
             <h2 className="text-4xl sm:text-5xl font-semibold font-gilroy text-white text-center mb-16">
                 Gallery
             </h2>
