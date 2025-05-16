@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
         <div className="  opacity- text-center pt-3  font-normal font-gilroy md:text-2xl text-lg  leading-[120%] ">
           {/* Three Decades of Breathing Life into Extraordinary Cinematic Dreams */}
-          The Art of  <span className=" group-hover:text-primary"> Sabu Cyril </span>
+          -The Art of  <span className=" group-hover:text-primary"> Sabu Cyril </span>
         </div>
       </div>
       <div className="z-20   md:pt-10 md:w-1/2 flex items-center  justify-center ">
