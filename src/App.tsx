@@ -12,6 +12,7 @@ import Home from "./Pages/Home";
 import Layout from "./components/Layout/Layout";
 import { PROSTHETICS, SPECIALPROPS, SETDESIGN, MINIATURES, CUSTOM, ANIMETRONICS } from "./Constants";
 import ComingSoon from "./Pages/ComingSoon";
+import Miniatures from "./Pages/Miniatures";
 
 // import MRpage from "./Pages/MRpage";
 // import ARpage from "./Pages/ARpage";
@@ -48,7 +49,7 @@ function App() {
             <Route path={PROSTHETICS} element={<ComingSoon />} />
             <Route path={SPECIALPROPS} element={<ComingSoon />} />
             <Route path={SETDESIGN} element={<ComingSoon />} />
-            <Route path={MINIATURES} element={<ComingSoon />} />
+            <Route path={MINIATURES} element={<Miniatures />} />
             <Route path={CUSTOM} element={<ComingSoon />} />
             <Route path={ANIMETRONICS} element={<ComingSoon />} />
           </Route>
