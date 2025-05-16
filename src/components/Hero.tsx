@@ -15,15 +15,16 @@ const Hero = () => {
         className=" absolute opacity-25 lg:top-0 top-0  left-0 md:h-screen max-sm:h-full w-full z-10  "
       />
 
-      <div className=" z-20 flex-grow lg:w-1/2 w-full max-lg:px-4 ">
+      <div className=" group  select-none z-20 flex-grow lg:w-1/2 w-full max-lg:px-4 ">
         {/* <div className=" text-white font-menseal uppercase font-light md:text-8xl text-4xl whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-[#e5daf7] ">
           Sabu Cyril
         </div> */}
-        <div className="  font-gilroy lg:pt-7 md:pt-3 pt-2 md:tracking-wider font-medium  md:text-5xl sm:text-3xl text-3xl ">
-          Crafting Immersive Cinematic Universes
+        <div className="  font-gilroy text-center  lg:pt-7 md:pt-3 pt-2 md:tracking-wider font-medium  md:text-5xl sm:text-3xl text-3xl ">
+          'Vision Beyond Reality'
         </div>
-        <div className=" opacity-70 pt-3  font-normal font-IBM md:text-2xl text-lg  leading-[120%] ">
-          Three Decades of Breathing Life into Extraordinary Cinematic Dreams
+        <div className="  opacity- text-center pt-3  font-normal font-gilroy md:text-2xl text-lg  leading-[120%] ">
+          {/* Three Decades of Breathing Life into Extraordinary Cinematic Dreams */}
+          The Art of  <span className=" group-hover:text-primary"> Sabu Cyril </span>
         </div>
       </div>
       <div className="z-20   md:pt-10 md:w-1/2 flex items-center  justify-center ">

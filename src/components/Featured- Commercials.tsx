@@ -84,22 +84,22 @@ const Commercial = () => {
   ];
 
   return (
-    <div className=" bg-[#A8AFB9] ">
+    <div className="bg-gradient-to-t from-[#202024] via-[#1a1a1d] to-[#1a1a1d]">
       <div
         className=" md:h-full  flex flex-col w-full text-center max-w-7xl mx-auto  md:py-20 py-10  px-10 "
       >
 
-        <div className="font-bold font-gilroy     text-black  pb-3 relative">
+        <div className="font-bold font-gilroy     text-white  pb-3 relative">
           Commercials
           {/* <div className=" absolute   bottom-6  md:w-1/2 w-full h-1 bg-gradient-to-r from-transparent to-transparent via-primary "></div> */}
         </div>
 
-        <div className="font-poppins text-black opacity-60 md:text-xl text-xl md:pb-10 pb-5 text-[#A7A7A8">
+        <div className="font-poppins text-white opacity-60 md:text-xl text-xl md:pb-10 pb-5 text-[#A7A7A8">
           Captivating Commercials: Crafting Unforgettable Impressions Across 500+ Masterpieces
         </div>
         <div className=" relative  max-md:hidden  ">
           <div
-            className={`" absolute top-[50%] bg-primary rounded-full ${Data?.length >= 3 ? " md:hidden " : " "}  -left-7 z-[100] cursor-pointer"`}
+            className={`" absolute top-[50%]  rounded-full ${Data?.length >= 3 ? " md:hidden " : " "}  -left-7 z-[100] cursor-pointer"`}
             onClick={() => (
               console.log(selected, "prev"),
               setSelected((prevSelected) =>
@@ -117,7 +117,7 @@ const Commercial = () => {
                 prevSelected < 3 ? prevSelected + 1 : 0
               )
             )}
-            className={`" absolute top-[50%] bg-primary rounded-full ${Data?.length >= 3 ? " md:hidden " : " "}  -right-7 z-[100] cursor-pointer"`}
+            className={`" absolute top-[50%]  rounded-full ${Data?.length >= 3 ? " md:hidden " : " "}  -right-7 z-[100] cursor-pointer"`}
           >
             <ChevronRight />
           </div>
@@ -170,7 +170,7 @@ const Commercial = () => {
 
         <div className=" relative  md:hidden  ">
           <div
-            className=" absolute top-[50%] bg-primary rounded-full   -left-7 z-[100] cursor-pointer"
+            className=" absolute top-[50%]  rounded-full   -left-7 z-[100] cursor-pointer"
             onClick={() =>
               setCurrentIndex((prevSelected) =>
                 prevSelected < 1 ? Data?.length : prevSelected - 1
@@ -186,7 +186,7 @@ const Commercial = () => {
                 prevSelected < Data?.length ? prevSelected + 1 : 0
               )
             }
-            className=" absolute top-[50%] bg-primary rounded-full  -right-7 z-[100] cursor-pointer"
+            className=" absolute top-[50%]  rounded-full  -right-7 z-[100] cursor-pointer"
           >
             <ChevronRight />
           </div>
@@ -213,7 +213,7 @@ const Commercial = () => {
                       alt={data?.name} className="  aspect-video object-cover h-52 w-full "
                     />
                     <div className=" w-full flex-grow  px-6 pt-4  flex flex-col gap- items-center text-center ">
-                      <div className="   font-gilroy  md:text-xl sm:text-lg text-xs font-medium">
+                      <div className="   font-gilroy  md:text-xl sm:text-lg text-xl font-medium">
                         {data?.name}
                       </div>
 

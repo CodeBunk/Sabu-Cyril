@@ -58,18 +58,17 @@ const Navbar = () => {
                 <a
                   onClick={() => Location(item?.route)}
                   className={`${item?.route === "/" + window.location.hash
-                    ? " text-primary   text-opacity-90 "
+                    ? " text-primar   text-opacity-90 "
                     : ""
                     }"group cursor-pointer font-gilory hover:-translate-y-0.5 delay-50 transition-all duration-200"`}
                 >
                   {item.name}
-                  {/* <div
-                    className={`  ${
-                      item?.route === "/" + window.location.hash
-                        ? " bg-gradient-to-r from-transparent via-white to-transparent "
-                        : ""
-                    } "  h-0.5 transition-all   group-hover:delay-300  group-hover:transition-all  group-hover:duration-300  group-hover:bg-gradient-to-r from-transparent via-white to-transparent"`}
-                  ></div> */}
+                  <div
+                    className={`  ${item?.route === "/" + window.location.hash
+                      ? " bg-gradient-to-r from-transparent via-white to-transparent "
+                      : ""
+                      } "  h-0.5 transition-all   group-hover:delay-300  group-hover:transition-all  group-hover:duration-300  group-hover:bg-gradient-to-r from-transparent via-white to-transparent"`}
+                  ></div>
                 </a>
               ))}
             </div>

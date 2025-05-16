@@ -130,7 +130,7 @@ const ServiceCarousel = () => {
   };
 
   return (
-    <div id="#expertise" className="   py-20  ">
+    <div id="#expertise" className="  bg-gradient-to-t from-[#121214] via-[#1a1a1d] to-[#1a1a1d]  py-20  ">
       <div className="relative h-auto space-y-0  ">
         <div className="md:text-center md:w-1/2 text-center px-6    tracking-wir font-gilroy font-medium md:text-5xl text-3xl md:pl-40 font-   pb-2 ">
 
